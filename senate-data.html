@@ -1,0 +1,161 @@
+ <!DOCTYPE HTML>
+<html>
+<head> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+	table{
+		width: 90%;
+		margin-left: 5%;
+		
+	}	
+	td{
+		
+	}
+</style>
+
+</head>
+<body>
+   	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="task2.css">
+
+   
+   <div id="senate-data"></div>
+   
+   <div class= "container">
+   <div class= "container">
+   <div class="container3">
+   <div class= "container1">
+    <img src="maxresdefault.jpg" class="img-circle" alt="Cinque Terre" width="100" height="100"> 
+    <h1>TGIF Logo</h1>
+	</div>
+    
+    <div class="container2">
+         <img src="35-e-mail-logo-free-cliparts-that-you-can-download-to-you-computer-and-NsUBjJ-clipart.jpeg" class="rounded float-right" alt="Cinque Terre" width="50" height="50"> 
+ 
+ <address><a href = "mailto:info@tgif.net" class = "img-circle">info@tgif.net</a></address>
+	</div>
+	</div>
+   
+    <div class="clearfix">
+    <span class="float-left"></span>
+    <span class="float-right"></span>
+  
+     </div>
+	</div>
+   
+   <a href="home.html"></a>
+   <a href="senate-data.html"></a>
+   <a href="house.html"></a>
+   <a href="senate2attendance.html"></a>
+	<a href="house2attendance.html"></a>
+	<a href="senate3party.html"></a>
+	<a href="house3party.html"></a>
+    
+    
+<header>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#codebrainery-toggle-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+				</div>
+				<ul class="nav navbar-nav navbar-left">
+					<li><a href="home.html">Home</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Congress 113<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="house.html">House</a></li>
+							<li><a href="senate-data.html">Senate</a></li>
+						</ul>
+					</li>
+				
+								<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Attendance<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+						<li><a href="house2attendance.html">House</a></li>	
+					    <li><a href="senate2attendance.html">Senate</a></li>
+						    
+						</ul>
+					</li>
+				
+				<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Party Loyalty<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							
+						    <li><a href="house3party.html">House</a></li>
+						<li><a href="senate3party.html">Senate</a></li>
+						</ul>
+					</li>
+				
+				
+				</ul>
+			</div>
+		</nav>
+    <div id="senate-data"></div>
+
+	</header>
+    <div class= "container">
+	<h2>Senators</h2>
+		First convened in 1789, the composition and powers of the Senate are established in Article One of the U.S. Constitution. Each state is represented by two senators, regardless of population, who serve staggered six-year terms. The Senate has several exclusive powers not granted to the House, including consenting to treaties as a precondition to their ratification and consenting to or confirming appointments of Cabinet secretaries, federal judges, other federal executive officials, military officers, regulatory officials, ambassadors, and other federal uniformed officers, as well as trial of federal officials impeached by the House
+	   
+	   <div class="clearfix">
+    <span class="float-left"></span>
+    <span class="float-right"></span>
+  </div>
+	
+	<div class="container">
+		<form>
+			<h6>Filter by party:</h6> <label class="checkbox-inline">
+      <input type="checkbox" id="repCheck" value="R">Republican
+    </label>
+			<label class="checkbox-inline">
+      <input type="checkbox" id="demCheck" value="D">Democrate
+    </label>
+			<label class="checkbox-inline">
+      <input type="checkbox" id="indCheck" value="I">Independent
+    </label>
+
+
+			<select id="myValue">
+  <option value="All">Filter by state</option>
+	</select>
+		</form>
+	</div>
+
+
+	<table value="generated table" onclick="getTable()" class="table-bordered table-hover">
+		<thead>
+			<th class="text-center">Name</th>
+			<th class="text-center">Party</th>
+			<th class="text-center">State</th>
+			<th class="text-center">Years in Office</th>
+			<th class="text-center">% votes w/party</th>
+		</thead>
+		<tbody id="myTable"></tbody>
+	</table>
+	<footer>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-footer">
+					<a class="navbar-brand" href="#">2016 TGIF| all Rights Reserved</a>
+				</div>
+			</div>
+			<!-- close container div -->
+		</nav>
+		<!-- close navbar nav -->
+	</footer>
+
+	
+	
+<script src="senate.js"></script>
+	<script src="task2.js"></script>
+
+	   </div>
+	</div>
+</body>
+
+</html>
